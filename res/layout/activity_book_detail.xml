@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#EBEBEB" 
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#1E90FF" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/top_bar_back" />
+
+        <View
+            android:id="@+id/view_temp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="#14191A" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/view_temp"
+            android:text="您的预定信息"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+       
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_round_frame"
+        android:padding="5dp"
+        android:orientation="vertical">
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="40dp">
+
+          <TextView
+              android:id="@+id/textView14"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="29dp"
+              android:text="支付金额：   " />
+
+          <TextView
+              android:id="@+id/tv_total_price"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:paddingRight="20dp"
+               android:gravity="right"
+              android:layout_alignBaseline="@+id/textView14"
+              android:layout_alignBottom="@+id/textView14"
+              android:layout_toRightOf="@+id/textView14"
+              android:text="TextView" />
+        
+    </RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB" />
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="40dp">
+
+       
+
+          <TextView
+              android:id="@+id/textView16"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentLeft="true"
+              android:layout_centerVertical="true"
+              android:layout_marginLeft="27dp"
+              android:text="充电位地址：  " />
+             <TextView
+              android:id="@+id/tv_space_address"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+               android:gravity="right"
+               android:paddingRight="20dp"
+              android:layout_alignBaseline="@+id/textView16"
+              android:layout_alignBottom="@+id/textView16"
+              android:layout_toRightOf="@+id/textView16"
+              android:text="TextView" />
+        
+    </RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:text="充电类型：  " />
+
+        <TextView
+            android:id="@+id/tv_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="right"
+             android:paddingRight="20dp"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:text="TextView" />
+
+    </RelativeLayout>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_round_frame"
+        android:padding="5dp"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="29dp"
+            android:text="每小时收费：     " />
+
+        <TextView
+            android:id="@+id/tv_per_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="right"
+             android:paddingRight="20dp"
+            android:layout_alignBaseline="@+id/textView4"
+            android:layout_alignBottom="@+id/textView4"
+            android:layout_toRightOf="@+id/textView4"
+            android:text="TextView" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="40dp">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:text="可出租时段：" />
+
+        <TextView
+            android:id="@+id/tv_chuzu_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:gravity="right"
+             android:paddingRight="20dp"
+            android:layout_alignBaseline="@+id/textView6"
+            android:layout_alignBottom="@+id/textView6"
+            android:layout_toRightOf="@+id/textView6"
+            android:text="TextView" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#EBEBEB" />
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:layout_height="40dp">
+
+       <TextView
+           android:id="@+id/textView8"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentLeft="true"
+           android:layout_centerVertical="true"
+           android:layout_marginLeft="30dp"
+           android:text="预定时段：   " />
+
+       <TextView
+           android:id="@+id/tv_yuding_time"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingRight="20dp"
+           android:layout_alignBaseline="@+id/textView8"
+           android:layout_alignBottom="@+id/textView8"
+           android:layout_toRightOf="@+id/textView8"
+           android:text="TextView" />
+        
+    </RelativeLayout>
+    </LinearLayout>
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+       <Button
+           android:id="@+id/yuding"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="20dp"
+
+           android:background="@drawable/main_login_selector"
+	       android:textColor="#ffffff"
+           android:text="提交订单" />
+        
+    </RelativeLayout>
+
+    
+</LinearLayout>

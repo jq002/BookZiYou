@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#EBEBEB" 
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#1E90FF" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/top_bar_back" />
+
+        <View
+            android:id="@+id/view_temp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="#14191A" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/view_temp"
+            android:text="充电位具体信息"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+       
+    </RelativeLayout>
+     <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"       
+        android:text="选择充电功率"
+        android:textSize="16sp" />
+    
+    <RadioGroup 
+        android:id="@+id/rg"
+	    android:orientation="vertical"
+	    android:layout_marginTop="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="13dp"
+	    android:layout_alignParentLeft="true">
+
+    <RadioButton
+        android:id="@+id/rb_changgui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:text="常规充电(3.8kw)" />
+
+    <RadioButton 
+           android:id="@+id/rb_kuaisu"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="快速充电(7kw)"/>
+    
+</RadioGroup>
+
+  <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"       
+        android:text="选择充电方式"
+        android:textSize="16sp" />
+    
+    <RadioGroup 
+        android:id="@+id/rg_two"
+	    android:orientation="vertical"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginTop="5dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginLeft="13dp"
+	    android:layout_alignParentLeft="true">
+
+    
+
+    <RadioButton 
+            android:id="@+id/rb_e"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:gravity="center_vertical"
+	        
+	        android:text="定电量"/>
+
+    <RadioButton 
+           android:id="@+id/rb_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:text="定时间"/>
+    
+</RadioGroup>
+
+     <LinearLayout
+    android:id="@+id/ll_settime"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="10dp"
+	android:orientation="horizontal"	
+	   android:visibility="gone" 
+	  >
+                <Button
+                android:id="@+id/setTimeBtn"
+                android:layout_width="100dp"
+                android:layout_height="43dp"
+                android:layout_marginRight="10dp" 
+                android:layout_marginLeft="10dp" 
+                android:background="@drawable/main_login_selector"
+                android:text="@string/begin"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+                 <Button
+                android:id="@+id/endTimeBtn"
+                android:layout_width="100dp"
+                android:layout_height="43dp"
+                android:layout_marginRight="10dp" 
+                 android:layout_marginLeft="10dp" 
+
+                android:background="@drawable/main_login_selector"
+                android:text="@string/end"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+
+</LinearLayout>
+           <LinearLayout
+    android:id="@+id/ll_setok"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="1dp"
+	android:orientation="horizontal"	
+	   android:visibility="gone" 
+	  >   
+	    <TextView
+	        android:id="@+id/tv_setok"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"               
+        android:textSize="16sp" />
+	         
+</LinearLayout>
+
+                <Button
+                android:id="@+id/bt_create"
+                android:layout_width="fill_parent"
+                android:layout_height="43dp"
+                android:layout_marginRight="10dp" 
+                android:layout_marginLeft="10dp" 
+                android:background="@drawable/main_login_selector"
+                android:text="下单"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+</LinearLayout>

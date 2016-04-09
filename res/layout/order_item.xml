@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_round_frame"
+    android:padding="5dp" 
+    android:orientation="vertical" >
+    
+
+    <RelativeLayout
+        android:id="@+id/re_position"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical" >
+        
+      <ImageView android:id="@+id/imageview3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/parking"/>
+        
+
+        <TextView
+            android:id="@+id/position_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageview3"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/imageview3"
+            
+            android:gravity="center"
+            android:text="集美区银江路155号"
+            android:textColor="@color/darkgreyt"
+            android:textSize="18sp" />
+           <TextView
+            android:id="@+id/state"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"  
+            android:layout_below="@+id/position_address"
+            android:gravity="center"
+            android:text="不出租"
+            android:layout_marginRight="10dp"
+            
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@+id/state"
+             
+            android:layout_alignLeft="@+id/position_address"
+            android:gravity="center"
+            android:text="充电时段:：13:00 -- 20:00"
+            android:textColor="@color/darkgreyt"
+            android:textSize="14sp" />
+         <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/time"
+                android:layout_marginTop="5dp"
+                android:background="#EBEBEB" />
+
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/look"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_login_selector"
+                    android:text="查看"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="#EBEBEB" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:gravity="center" >
+
+                <Button
+                    android:id="@+id/create_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/main_login_selector"
+                    android:text="预订"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+  
+
+</LinearLayout>

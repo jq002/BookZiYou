@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.bookziyou"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name="com.jqjava.lesson5.DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_car3"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="c8b081cf156205b7406f5d6ee997f4a5" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LookmainActivity"
+            android:label="@string/title_activity_lookmain" >
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".ChooseRegisterActivity"
+            android:label="@string/title_activity_choose_register" >
+        </activity>
+        <activity
+            android:name=".UserInterFaceActivity"
+            android:label="@string/title_activity_user_inter_face" >
+        </activity>
+        <activity
+            android:name=".SearchStationActivity"
+            android:label="@string/title_activity_search_station" >
+        </activity>
+        <activity
+            android:name=".LookPositionActivity"
+            android:label="@string/title_activity_look_position" >
+        </activity>
+        <activity
+            android:name=".BookPositionActivity"
+            android:label="@string/title_activity_book_position" >
+        </activity>
+        <activity
+            android:name=".LookDetailPositionActivity"
+            android:label="@string/title_activity_look_detail_position" >
+        </activity>
+        <activity
+            android:name=".MySettingActivity"
+            android:label="@string/title_activity_my_setting" >
+        </activity>
+        <activity
+            android:name=".BookDetailActivity"
+            android:label="@string/title_activity_book_detail" >
+        </activity>
+        <activity
+            android:name=".PayActivity"
+            android:label="@string/title_activity_pay" >
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:label="@string/title_activity_order" >
+        </activity>
+        <activity
+            android:name=".OrderDetailActivity"
+            android:label="@string/title_activity_order_detail" >
+        </activity>
+        <activity
+            android:name=".MyCreditScoreActivity"
+            android:label="@string/title_activity_my_credit_score" >
+        </activity>
+        <activity
+            android:name=".MyMoneyBagActivity"
+            android:label="@string/title_activity_my_money_bag" >
+        </activity>
+        <activity
+            android:name=".MyUserInfoActivity"
+            android:label="@string/title_activity_my_user_info" >
+        </activity>
+        <activity
+            android:name=".OrderStateActivity"
+            android:label="@string/title_activity_order_state" >
+        </activity>
+        <activity
+            android:name=".UpdateNickActivity"
+            android:label="@string/title_activity_update_nick" >
+        </activity>
+        <activity
+            android:name=".ChangepwdActivity"
+            android:label="@string/title_activity_changepwd" >
+        </activity>
+        <activity
+            android:name=".PayMoneyActivity"
+            android:label="@string/title_activity_pay_money" >
+        </activity>
+    </application>
+
+</manifest>

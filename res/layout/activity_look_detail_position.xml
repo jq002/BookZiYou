@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="#EBEBEB" 
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="#1E90FF" >
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/top_bar_back" />
+
+        <View
+            android:id="@+id/view_temp"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/iv_back"
+            android:background="#14191A" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/view_temp"
+            android:text="全部充电位信息"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+        
+       
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp" 
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        />
+      <TextView
+        android:id="@+id/textview9"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="成功/失败次数:  5/0"
+
+        android:textSize="16sp" />
+        <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/darkgrey" >
+    </View>
+    <TextView
+        android:id="@+id/textview0"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="充电位状态:  不出租"
+
+        android:textSize="16sp" />
+        <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/darkgrey" >
+    </View>
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="充电位地址:  2栋楼下"
+
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/darkgrey" >
+    </View>
+
+    <TextView
+        android:id="@+id/textview2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="出租时段:  12:00--21:00"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/darkgrey" >
+    </View>
+
+    <TextView
+        android:id="@+id/textview3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="充电桩编号:  AFD00002"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/darkgrey" >
+    </View>
+
+    <TextView
+        android:id="@+id/textview4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="常规充电 (3.0kw/h) :  ¥7.00"
+        android:textSize="16sp" />
+     <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/darkgrey" >
+    </View>
+
+    <TextView
+        android:id="@+id/textview5"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="快速充电 (7kw/h) :  ¥18.00"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="260dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/main_login_selector"
+        android:text="预定"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
